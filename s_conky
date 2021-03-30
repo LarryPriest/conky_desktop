@@ -1,0 +1,5 @@
+#! /bin/bash
+sleep 30
+taskset --cpu-list 2 /usr/bin/conky
+taskset --cpu-list 3 /usr/bin/conky -c /home/larry/conky_desktop/conky_weather_rc
+taskset --cpu-list 1 /usr/bin/conky -c /home/larry/conky_desktop/Clock_conky
