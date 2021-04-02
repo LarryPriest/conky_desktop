@@ -5,19 +5,19 @@ import urllib.request
 import urllib.parse
 import json
 import time
-import os
-import sys
+# import os
+# import sys
 from secrets import secrets
 
 # values = {'id':  '5882799',
-          # 'appid': 'cf0aba57ff70cd8b0f22192a4860cee6',
-          # 'units': 'metric'}
+# 'appid': 'cf0aba57ff70cd8b0f22192a4860cee6',
+# 'units': 'metric'}
 
 # url = 'http://api.openweathermap.org/data/2.5/weather'
-values = {'id':secrets['id'],
-           'appid':secrets['appid'],
-           'units':secrets['units']}
-url  = secrets['url']
+values = {'id': secrets['id'],
+          'appid': secrets['appid'],
+          'units': secrets['units']}
+url = secrets['url']
 
 url_data = urllib.parse.urlencode(values)
 req = url + '?' + url_data
@@ -53,7 +53,7 @@ print('Obs. time: %s' % (obs_time))
 print(w_data['name'])
 print("%s\u00B0 long." % (longitude), end='')
 print("%s\u00B0 lat." % (latitude))
-print()
+print()  # blank lines for the icon to appear
 print()
 print("Temp %s \u00B0C" % (temp_c))
 print(weather)
