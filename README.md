@@ -11,3 +11,5 @@ secrets.py with your info.
 ## The end
 see licence file for licence info and...
 Have a great day!
+
+just some updates for easier access
