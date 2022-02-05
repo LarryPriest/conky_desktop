@@ -55,7 +55,7 @@ conky.config = {
     ######### above for constants and general setup ##########
     ### Lua script invocation
 --]]
-    lua_load = '/home/larry/scripts/Clock.lua',
+    lua_load = '~/conky_desktop/Clock.lua',
     lua_draw_hook_pre = 'Clock_main',
 }
 conky.text = [[
