@@ -1,6 +1,6 @@
 #! /bin/bash
 killall conky
 
-taskset --cpu-list 2 /usr/bin/conky
-taskset --cpu-list 3 /usr/bin/conky -c ~/conky_desktop/conky_weather_rc
-taskset --cpu-list 1 /usr/bin/conky -c ~/conky_desktop/Clock_conky
+taskset --cpu-list 2 /usr/bin/conky -c ~/conky_desktop/conkyrc.conf
+taskset --cpu-list 3 /usr/bin/conky -c ~/conky_desktop/conky_weather_rc.conf
+taskset --cpu-list 1 /usr/bin/conky -c ~/conky_desktop/Clock_conky.conf

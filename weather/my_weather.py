@@ -42,10 +42,10 @@ icon_url = 'http://openweathermap.org/img/w/'
 icon = w_data['weather'][0]['icon'] + '.png'
 
 req = icon_url + icon
-with urllib.request.urlopen(req) as webfile:
+with urllib.request.urlopen(req) as current_icon:
     # localFile = open('/home/larry/scripts/icons/current.png', 'wb+')
-    localFile = open('current.png', 'wb+')
-    localFile.write(webfile.read())
+    localFile = open('/home/larry/conky_desktop/weather/current.png', 'wb')
+    localFile.write(current_icon.read())
 
     localFile.close()
 
