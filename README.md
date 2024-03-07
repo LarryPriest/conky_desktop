@@ -6,7 +6,8 @@ It contains Conky scripts, Lua and Python.
 Weather uses openweather.org, see secrets.py.bak for examples. must be renamed to 
 secrets.py with your info.
 
-.conkyrc has to be moved to your home directory ( default conky script - modified)
+# not needed any more se the s_conky and rs_conky files for start and restart functions
+# .conkyrc has to be moved to your home directory ( default conky script - modified)
 
 ## The end
 see licence file for licence info and...
